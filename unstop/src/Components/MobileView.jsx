@@ -2,7 +2,7 @@ import { Box, Drawer, DrawerBody, DrawerContent, DrawerHeader, DrawerOverlay, Fl
 import React, { useState } from 'react'
 import { MdOutlineLaptopMac, MdFilterAlt } from 'react-icons/md';
 import { AiOutlinePlus } from 'react-icons/ai';
-import { BiSolidBarChartAlt2, BiSearchAlt2} from 'react-icons/bi';
+import { BiSolidBarChartAlt2, BiSearchAlt2 } from 'react-icons/bi';
 import { LuServer, LuUsers } from 'react-icons/lu';
 import { PiGlobeBold } from 'react-icons/pi';
 import { FiLink2 } from 'react-icons/fi';
@@ -60,7 +60,7 @@ function MobileView({ viewPort, setViewPort }) {
             <HStack px={'15px'} py={'18px'}>
                 <SideMenu />
                 <Spacer />
-                <Box onClick={() => {setViewPort(!viewPort)}}>
+                <Box onClick={() => { setViewPort(!viewPort) }}>
                     <MdOutlineLaptopMac size={'20px'} />
                 </Box>
             </HStack>
@@ -137,7 +137,7 @@ function MobileView({ viewPort, setViewPort }) {
                 <HStack gap={'23px'}>
                     <BiSearchAlt2 size={'21px'} />
                     <MdFilterAlt size={'25px'} />
-                    <Box onClick={()=>{setToggle(!toggle)}} p={'10px'}  borderRadius={'30px'} bg={!toggle?"white": '#F2F8FE'} border={!toggle?"":'1px solid #0073E6'}>
+                    <Box onClick={() => { setToggle(!toggle) }} p={'10px'} borderRadius={'30px'} bg={!toggle ? "white" : '#F2F8FE'} border={!toggle ? "" : '1px solid #0073E6'}>
                         <BiSolidBarChartAlt2 size={'20px'} />
                     </Box>
 
@@ -164,58 +164,58 @@ function MobileView({ viewPort, setViewPort }) {
                         <Select placeholder='Select'></Select>
                         <FormLabel>Skills</FormLabel>
                         <Grid templateColumns='repeat(2, 1fr)' gap={"10px"} p={"16px"} h={"216px"} borderRadius={"8px 8px 0px 0px"} border={"1px solid #DDE5EA"}>
-                                                            <Tag
-                                                                w="142px"
-                                                                h="30px"
-                                                                borderRadius='22px'
-                                                                bg="#DDEDFF"
-                                                                p={"6px 8px"}
-                                                            >
-                                                                <TagLabel fontSize={"12px"} fontWeight={"500"} color={"#1C4980"}>UI/UX and Design</TagLabel>
-                                                                <TagCloseButton color={"#1C4980"} />
-                                                            </Tag>
-                                                            <Tag
-                                                                w="142px"
-                                                                h="30px"
-                                                                borderRadius='22px'
-                                                                bg="#DDEDFF"
-                                                                p={"6px 8px"}
-                                                            >
-                                                                <TagLabel fontSize={"12px"} fontWeight={"500"} color={"#1C4980"}>No of Question</TagLabel>
-                                                                <TagCloseButton color={"#1C4980"} />
-                                                            </Tag>
-                                                            <Tag
-                                                                w="142px"
-                                                                h="30px"
-                                                                borderRadius='22px'
-                                                                bg="#DDEDFF"
-                                                                p={"6px 8px"}
-                                                            >
-                                                                <TagLabel fontSize={"12px"} fontWeight={"500"} color={"#1C4980"}>Web Development</TagLabel>
-                                                                <TagCloseButton color={"#1C4980"} />
-                                                            </Tag>
-                                                            <Tag
-                                                                w="142px"
-                                                                h="30px"
-                                                                borderRadius='22px'
-                                                                bg="#DDEDFF"
-                                                                p={"6px 8px"}
-                                                            >
-                                                                <TagLabel fontSize={"12px"} fontWeight={"500"} color={"#1C4980"}>UI/UX and Design</TagLabel>
-                                                                <TagCloseButton color={"#1C4980"} />
-                                                            </Tag>
-                                                            <Tag
-                                                                w="142px"
-                                                                h="30px"
-                                                                borderRadius='22px'
-                                                                bg="#DDEDFF"
-                                                                p={"6px 8px"}
-                                                            >
-                                                                <TagLabel fontSize={"12px"} fontWeight={"500"} color={"#1C4980"}>Web Development</TagLabel>
-                                                                <TagCloseButton color={"#1C4980"} />
-                                                            </Tag>
+                            <Tag
+                                w="142px"
+                                h="30px"
+                                borderRadius='22px'
+                                bg="#DDEDFF"
+                                p={"6px 8px"}
+                            >
+                                <TagLabel fontSize={"12px"} fontWeight={"500"} color={"#1C4980"}>UI/UX and Design</TagLabel>
+                                <TagCloseButton color={"#1C4980"} />
+                            </Tag>
+                            <Tag
+                                w="142px"
+                                h="30px"
+                                borderRadius='22px'
+                                bg="#DDEDFF"
+                                p={"6px 8px"}
+                            >
+                                <TagLabel fontSize={"12px"} fontWeight={"500"} color={"#1C4980"}>No of Question</TagLabel>
+                                <TagCloseButton color={"#1C4980"} />
+                            </Tag>
+                            <Tag
+                                w="142px"
+                                h="30px"
+                                borderRadius='22px'
+                                bg="#DDEDFF"
+                                p={"6px 8px"}
+                            >
+                                <TagLabel fontSize={"12px"} fontWeight={"500"} color={"#1C4980"}>Web Development</TagLabel>
+                                <TagCloseButton color={"#1C4980"} />
+                            </Tag>
+                            <Tag
+                                w="142px"
+                                h="30px"
+                                borderRadius='22px'
+                                bg="#DDEDFF"
+                                p={"6px 8px"}
+                            >
+                                <TagLabel fontSize={"12px"} fontWeight={"500"} color={"#1C4980"}>UI/UX and Design</TagLabel>
+                                <TagCloseButton color={"#1C4980"} />
+                            </Tag>
+                            <Tag
+                                w="142px"
+                                h="30px"
+                                borderRadius='22px'
+                                bg="#DDEDFF"
+                                p={"6px 8px"}
+                            >
+                                <TagLabel fontSize={"12px"} fontWeight={"500"} color={"#1C4980"}>Web Development</TagLabel>
+                                <TagCloseButton color={"#1C4980"} />
+                            </Tag>
 
-                                                        </Grid>
+                        </Grid>
                         <Input placeholder='Type here' />
                         <FormLabel>Duration of assessment</FormLabel>
                         <Input type='date' placeholder='Type Here' />
